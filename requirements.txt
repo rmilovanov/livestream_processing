@@ -1,0 +1,7 @@
+numpy==1.22.3
+opencv-python==4.5.5.64
+pafy==0.5.5
+youtube_dl==2021.12.17
+pyzmq==22.3.0
+flask==2.1.2
+fastapi==0.78.0

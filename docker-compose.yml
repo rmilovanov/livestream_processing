@@ -1,0 +1,28 @@
+version: '3.7'
+services:
+  server:
+    container_name: livestream
+    build:
+      context: .
+      dockerfile: Dockerfile_web
+    volumes:
+    - .:/usr/src
+    ports:
+      - "8008:8008"
+    environment:
+      - PORT=8008
+    networks:
+      - backend
+    entrypoint: /start-reload.sh
+  video:
+    container_name: video_processor
+    build:
+      context: .
+      dockerfile: Dockerfile_video
+    volumes:
+      - .:/usr/src
+    command: ["python", "decoder.py"]
+networks:
+  backend:
+    name: backend
+    driver: bridge
