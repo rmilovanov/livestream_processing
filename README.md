@@ -1,4 +1,4 @@
-Для примера взял видео [https://youtu.be/DjdUEyjx8GM](https://youtu.be/DjdUEyjx8GM)
+Для примера взял стрим [https://youtu.be/DjdUEyjx8GM](https://youtu.be/DjdUEyjx8GM)
 
 Собрать и запустить сервис:
 ```
